@@ -1,0 +1,11 @@
+{ 
+    "applinks": { 
+        "apps": [],
+        "details": [
+            { 
+                "appID": "J9ZYG4J49P.com.bocaraton.hotel",
+                "paths": [ "*" ]
+            }
+        ]
+    }
+}

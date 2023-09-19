@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.bocaraton.hotel",
+            "sha256_cert_fingerprints": [
+                "11:36:F3:1E:F3:64:3C:0D:6B:73:6B:94:3F:14:91:D1:06:B8:6D:F3:3E:6F:57:EB:3F:F4:E6:4B:DD:11:17:C0"
+            ]
+        }
+    }
+]
