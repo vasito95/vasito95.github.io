@@ -1,10 +1,21 @@
-
 <!doctype html>
 <html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+
+<head>
+  <script>
+    custom = "yourapp://<your_token>";
+    var now = new Date();
+    var time = now.getTime();
+    var expireTime = time + 1000 * 3600;
+    now.setTime(expireTime);
+    document.cookie = 'yourKey=' + custom + ';expires=' + now.toGMTString() + ';domain=<your_domain>';
+  </script>
+  <title>This is the title of the webpage!</title>
+</head>
+
+<body>
+  <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this
+    <strong>p</strong> tag and its contents.</p>
+</body>
+
 </html>
