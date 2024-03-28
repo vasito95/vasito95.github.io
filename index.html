@@ -3,12 +3,12 @@
 
 <head>
   <script>
-    custom = "yourapp://<your_token>";
+    custom = "bocaraton://app?page=events";
     var now = new Date();
     var time = now.getTime();
     var expireTime = time + 1000 * 3600;
     now.setTime(expireTime);
-    document.cookie = 'yourKey=' + custom + ';expires=' + now.toGMTString() + ';domain=<your_domain>';
+    document.cookie = 'link=' + custom + ';expires=' + now.toGMTString() + ';domain=<your_domain>';
   </script>
   <title>This is the title of the webpage!</title>
 </head>
@@ -16,6 +16,7 @@
 <body>
   <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this
     <strong>p</strong> tag and its contents.</p>
+    <a href="intent:#Intent;scheme=bocaraton://open?url_param=hi santhosh;package=com.bocaraton.hotel;S.browser_fallback_url=http%3A%2F%2Fzxing.org;end">click here</a>
 </body>
 
 </html>
