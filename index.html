@@ -16,9 +16,7 @@
       }
     }
 
-    var token = getUrlParam(token);
-
-    var androidIntentUrl = "intent://www.iranatlas.info/droid/deferred-deeplink" + window.location.search + "#Intent;scheme=http;package=sample.deeplinking.deferred.deferreddeeplink;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails?id=sample.deeplinking.deferred.deferreddeeplink&referrer=droid%2Fcolor" + window.location.search + ";end";
+    var androidIntentUrl = "intent://www.thebocaraton.com/app" + window.location.search + "#Intent;scheme=http;package=com.bocaraton.hotel;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails?id=com.bocaraton.hotel&referrer=page" + window.location.search + ";end";
 
     var isMobile = {
       Windows: function () {
@@ -35,12 +33,11 @@
     // Windows return both android and iPhone in it's identity, need to check first.
     if (!isMobile.Windows()) {
       if (isMobile.Android()) {
-
         window.location = androidIntentUrl;
       }
 
       if (isMobile.iPhone()) {
-        //window.location=appleStoreUrl;
+        window.location = "https://apps.apple.com/app/id1624501356";
       }
     }
 
