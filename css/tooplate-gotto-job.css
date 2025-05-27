@@ -1547,5 +1547,8 @@ nav[aria-label="breadcrumb"] {
   .job-detail-share {
     margin: 20px auto 0 auto;
   }
+  .header-image{
+    margin: 20px auto 20px auto !important;
+  }
 }
 
